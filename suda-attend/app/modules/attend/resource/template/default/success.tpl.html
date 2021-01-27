@@ -1,0 +1,268 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>报名结果页</title>
+    <style>
+        html{
+            font-size:625%!important;
+            font-family: "Microsoft YaHei", Helvetica, STHeiTi, "Helvetica Neue", "微软雅黑", SimSun, sans-serif;
+        }
+        .all{
+            overflow:hidden;
+            width:100%;
+            height:100%;
+            background:rgb(110,110,110);
+        }
+        body{
+            overflow:hidden;
+            padding:0;
+            margin:0;
+        }
+        .content{
+            position:absolute;
+            height:85%;
+            width:88%;
+            left:6%;
+            top:.3rem;
+            background:rgba(255,255,255,.98);
+            border-radius:12px;
+        }
+        .button{
+            position:absolute;
+            margin-left:-.25rem;
+            left:50%;
+            top:calc(85% + .25rem + .15rem);
+            z-index:9999;
+            border-radius: 999px;
+            height:.5rem;
+            width:.5rem;
+            background:rgba(255,255,255,.25);
+        }
+        .button span{
+            position:absolute;
+            color:rgba(1,1,1,.95);
+            line-height:.5rem;
+            font-size:28px;
+        }
+        .content .cirle{
+            border-radius: 9999px;
+            height:.6rem;
+            width:.6rem;
+            position:absolute;
+            background:rgba(255,255,255,.98);
+            margin-left:-.3rem;/*居中*/
+            left:50%;/*也可以用calc(50% - .3rem)*/
+            top:-.3rem;/*感觉好像出去了一样的效果*/
+            padding:0;
+            overflow:hidden;/*避免失误*/
+        }
+        .content .cirle img{
+            width:calc(100% - 7.5%*2);
+            height:85%;
+            margin-left:7.5%;
+            margin-top:7.5%;
+            position:relative;
+            border-radius: 9999px;
+        }
+        .content .head{
+            padding:.1rem 0;
+        }
+        .title{
+            color:#222;
+            font-size:.24rem;
+            margin-top:calc(.03rem + .3rem);
+            text-align:center;
+        }
+        .tips{
+            margin-top:-.18rem;
+            display:block;
+            color:#757575;
+            font-size:.14rem;
+            text-align: center;
+        }
+        .head{
+            border-bottom:.01rem dashed #858585;
+        }
+        .qie{
+            border-radius: 9999px;/*纯圆*/
+            position:absolute;
+            background:rgba(110,110,110,1);
+            height:.25rem;
+            width:.25rem;
+        }
+        .left-qie{
+            left:-.125rem;
+        }
+        .right-qie{
+            right:-.125rem;
+        }
+        .father{
+            width:90%;
+            margin-left:5%;
+
+        }
+        .father .inline{
+            display:inline-block;
+            font-size:0;
+            overflow:hidden;
+        }
+        .father .inline h3{
+            color:#aaa;
+            font-size:.14rem;
+        }
+        .father .inline p{
+            color:#111;
+            font-size:.14rem;
+        }
+        .father .inline span{
+            color:#888;
+            font-size:.14rem;
+        }
+        .time1{
+            text-align:left;
+            width:45%;
+        }
+        .time2{
+            text-align:right;
+            width:45%;
+        }
+        .foot{
+            width:80%;
+            margin-left:10%;
+            background:#ccc;
+            height:.6rem;
+            position:absolute;
+            bottom:.2rem;
+            border-radius: .08rem;
+            opacity: .01;
+        }
+        .foot p{
+            line-height:.3rem;
+            font-size:.16rem;
+            color:black;
+            text-align:center;
+        }
+        .foot p:before{
+            content:'atd新人qq群:715061695';
+        }
+    </style>
+</head>
+<body>
+<div class="all">
+    <div class="content">
+        <div class="cirle">
+            <img src="@static/images/success.png" alt="">
+        </div>
+        <div class="left-qie qie">
+
+        </div>
+        <div class="right-qie qie">
+
+        </div>
+        <div class="head">
+            <h3 class="title">
+                提交成功！
+            </h3>
+            <span class="tips">
+                    尊敬的{{$:name}}，您已提交报名表，请等待审核
+                </span>
+        </div>
+        <div class="body">
+            <div class="time father">
+                <div class="time1 inline">
+                    <h3>
+                        日 期
+                    </h3>
+                    <p>
+                        {{$:date}}
+                    </p>
+                </div>
+                <div class="time2 inline">
+                    <h3>
+                        时 间
+                    </h3>
+                    <p>
+                        {{$:time}}
+                    </p>
+                </div>
+            </div>
+
+            <div class="time father">
+                <div class="time1 inline">
+                    <h3>
+                        bug 反 馈
+                    </h3>
+                    <p id="qun1">
+                        qq群:882672751
+                    </p>
+                </div>
+                <div class="time2 inline">
+                    <h3>
+                        协 会 名 称
+                    </h3>
+                    <p>
+                        ATD
+                    </p>
+                </div>
+            </div>
+
+            <div class="time father">
+                <div class="time1 inline">
+                    <h3>
+                        ATD新人群:
+                    </h3>
+                    <p id="qun2">
+                        qq群:715061695
+                    </p>
+                </div>
+                <div class="time2 inline">
+                    <img src="http://q1.qlogo.cn/g?b=qq&nk=908803958&s=100" style="height:75px;border-radius:9999px;" alt="">
+                    <!--
+                        判断下，如果填写qq输出qq头像，如果是微信随便输出个图像- -
+                    -->
+                </div>
+            </div>
+        </div>
+        <div class="foot">
+            <p>
+
+            </p>
+        </div>
+    </div>
+    <div class="button">
+        <!--一个x-->
+        <span id="x">
+                X
+            </span>
+    </div>
+</div>
+<script src="@static/js/jquery.min.js"></script>
+<script>
+    $("document").ready(function () {
+        var x = $("#x").width();
+        x=(50-x)/2;
+        $("#x").css("left",x+"px");
+        var top = $(".head").height();//1.16rem
+        top = ((top+21)-12.5)/100;//加padding和bottom
+        $(".qie").css("top",top+"rem");
+
+    });
+    $("#qun1").click(function () {
+        window.location.href = "http://qm.qq.com/cgi-bin/qm/qr?k=dEq8-yspSdhYz2K69xUKyYpz7iNO7zqk";
+    });
+    $("#qun2").click(function () {
+        window.location.href = "https://jq.qq.com/?_wv=1027&k=5CdtUNy";
+    })
+    $(".button").click(function () {
+        $(".button").animate({"opacity":".01"},300);
+        $(".content").animate({"top":"-90%","opacity":0.01},1200);
+        setTimeout(function () {
+            window.location.href="./";
+        },2000)
+    })
+</script>
+</body>
+</html>

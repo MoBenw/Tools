@@ -1,0 +1,7 @@
+{
+    "view.setting.header.navlist.append":[
+        "dxkite.user.View::settingNav"
+    ],"Application:init":[
+        "dxkite.user.View::initConfig"
+    ]
+}

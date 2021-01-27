@@ -1,0 +1,14 @@
+{
+    "index": {
+        "url": "\/",
+        "template": "index"
+    },
+    "table": {
+        "url": "\/table",
+        "template": "table"
+    },
+    "success": {
+        "url": "\/success",
+        "class": "demo.attend.response.SuccessResponse"
+    }
+}

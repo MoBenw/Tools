@@ -1,0 +1,6 @@
+{
+    "admin_list":{
+        "class":"demo.attend.response.setting.ListResponse",
+        "visit":"\/list"
+    }
+}

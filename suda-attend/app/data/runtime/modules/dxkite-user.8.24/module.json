@@ -1,0 +1,39 @@
+{
+    "name": "dxkite\/user",
+    "homepage": "http:\/\/atd3.cn",
+    "version": "1.0.0",
+    "locale": "zh-CN",
+    "namespace": "dxkite\\user",
+    "suda": ">=1.2.14",
+    "discription": "文章系统",
+    "install": "dxkite.user.manager.UserManager::install",
+    "authors": [{
+        "name": "dxkite",
+        "email": "dxkite@qq.com"
+    }],
+    "table": {
+        "invite": "dxkite.user.table.InviteTable",
+        "user": "dxkite.user.table.UserTable",
+        "emailCheck": "dxkite.user.table.EmailCheckTable"
+    },
+    "proxy": {},
+    "open-api": {
+        "v1.0": {
+            "user": "dxkite.user.api.User"
+        }
+    },
+    "import": {
+        "share": {
+            "dxkite\\user": "share"
+        },
+        "src": {
+            "dxkite\\user\\response": "src"
+        }
+    },
+    "require": {
+        "dxkite\/support": ""
+    },
+    "prefix": {
+        "simple": "\/user"
+    }
+}

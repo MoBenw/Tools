@@ -1,0 +1,8 @@
+id:'6',value:'环设学',childs:[{id:'1',value:'环设1班'},{id:'2',value:'环设2班'},{id:'3',value:'环设3班'},{id:'4',value:'环设4班'},{id:'5',value:'环设5班'},{id:'6',value:'环设6班'},{id:'7',value:'环设7班'},{id:'8',value:'环设8班'}]
+
+
+id:'2',value:'风景园林',childs:[{id:'1',value:'视传1班'},{id:'2',value:'视传2班'},{id:'3',value:'视传3班'},{id:'4',value:'视传4班'}]
+
+                            {
+                                id:'8',value:'人力资源',childs:[{id:'1',value:'人资1班'},{id:'2',value:'人资2班'}]
+                            },

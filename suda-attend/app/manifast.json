@@ -1,0 +1,15 @@
+{
+    "name": "suda-test-app",
+    "namespace": "cn\\atd",
+    "version": "1.0-dev",
+    "application": "suda\\core\\Application",
+    "modules": ["suda","support","user"],
+    "reachable": ["support","user"],
+    "language": "zh-CN",
+    "url": {
+        "mode": 0,
+        "beautify": true,
+        "rewrite": true
+    },
+    "debugSupport": "dxkite"
+}

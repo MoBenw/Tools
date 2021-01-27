@@ -1,0 +1,20 @@
+{
+    "user:admin_list": {
+        "name": "用户设置",
+        "sort": -888,
+        "child": {
+            "user:admin_list": {
+                "name": "用户列表"
+            },
+            "user:admin_add": {
+                "name": "添加用户"
+            },
+            "user:admin_edit": {
+                "name": "编辑用户"
+            },
+            "user:admin_role": {
+                "name": "编辑角色"
+            }
+        }
+    }
+}

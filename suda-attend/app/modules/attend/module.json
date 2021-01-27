@@ -1,0 +1,22 @@
+{
+    "name": "demo/attend",
+    "namespace": "demo\\attend",
+    "authors": [{
+        "name": "dxkite",
+        "email": "dxkite@qq.com"
+    }],
+    "import": {
+        "share": {
+            "demo\\attend": "share"
+        },
+        "src": {
+            "demo\\attend\\response": "src"
+        }
+    },
+    "discription": "协会报名页面",
+    "require": {
+        "dxkite\/user": ""
+    },
+    "version": "1.0.0-dev",
+    "install": "demo\\attend\\Install::task"
+}

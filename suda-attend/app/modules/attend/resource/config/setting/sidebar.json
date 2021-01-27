@@ -1,0 +1,11 @@
+{
+    "attend:admin_list": {
+        "name": "报名表",
+        "sort": -888,
+        "child": {
+            "attend:admin_list": {
+                "name": "功能列表"
+            }
+        }
+    }
+}

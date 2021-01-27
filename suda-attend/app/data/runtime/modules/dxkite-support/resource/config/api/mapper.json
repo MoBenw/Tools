@@ -1,0 +1,7 @@
+{
+    "v1.0": {
+        "grant": "dxkite.support.visitor.GrantManager",
+        "database": "dxkite.support.database.DbHelper",
+        "template": "dxkite.support.template.Data"
+    }
+}

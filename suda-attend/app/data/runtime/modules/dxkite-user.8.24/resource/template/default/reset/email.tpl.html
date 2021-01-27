@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" style="box-sizing: border-box;font-family: sans-serif;line-height: 1.15;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;-ms-overflow-style: scrollbar;-webkit-tap-highlight-color: transparent;">
+
+<head style="box-sizing: border-box;">
+    <meta charset="utf-8" style="box-sizing: border-box;">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" style="box-sizing: border-box;">
+    <title style="box-sizing: border-box;">@setting('website_name') - 邮箱验证</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous" style="box-sizing: border-box;">
+</head>
+
+<body style="box-sizing: border-box;margin: 0;font-family: -apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Roboto,&quot;Helvetica Neue&quot;,Arial,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,&quot;Segoe UI Symbol&quot;;font-size: 1rem;font-weight: 400;line-height: 1.5;color: #212529;text-align: left;background-color: #fff;min-width: 992px!important;">
+    <main style="box-sizing: border-box;display: block;">
+        <div class="jumbotron bg-white" style="box-sizing: border-box;padding: 2rem 1rem;margin-bottom: 2rem;background-color: #fff!important;border-radius: .3rem;">
+            <h4 class="text-primary" style="box-sizing: border-box;margin-top: 0;margin-bottom: .5rem;font-family: inherit;font-weight: 500;line-height: 1.2;color: #007bff!important;font-size: 1.5rem;">欢迎在 @setting('website_name') 网站上注册账号</h4>
+            <p class="lead" style="box-sizing: border-box;margin-top: 0;margin-bottom: 1rem;orphans: 3;widows: 3;font-size: 1.25rem;font-weight: 300;">你当前收到的这个邮件用于验证邮箱的有效性，若果你并没有在网站 @setting('website_name') 上注册账号，请忽略当前这个邮件；当你点击确认后，网站将会记录你的邮箱并用来当年忘记密码后，重置密码使用。</p>
+            <hr class="my-4" style="box-sizing: content-box;height: 0;overflow: visible;margin-top: 1.5rem!important;margin-bottom: 1.5rem!important;border: 0;border-top: 1px solid rgba(0,0,0,.1);">
+            <p style="box-sizing: border-box;margin-top: 0;margin-bottom: 1rem;orphans: 3;widows: 3;">请点击如下的按键确认绑定邮箱，如果如下按钮无法点击，请复制此链接到浏览器地址栏打开：
+                <a class="text-success" href="@u('user:index',['token'=>$:token])" style="box-sizing: border-box;color: #28a745!important;text-decoration: underline;background-color: transparent;-webkit-text-decoration-skip: objects;">@u('user:index',['token'=>$:token])</a>
+            </p>
+            <p class="text-warning" style="box-sizing: border-box;margin-top: 0;margin-bottom: 1rem;orphans: 3;widows: 3;color: #ffc107!important;">请不要回复此邮件</p>
+            <p class="lead" style="box-sizing: border-box;margin-top: 0;margin-bottom: 1rem;orphans: 3;widows: 3;font-size: 1.25rem;font-weight: 300;">
+                <a class="btn btn-primary btn-lg" href="@u('user:index',['token'=>$:token])" role="button" style="box-sizing: border-box;color: #fff;text-decoration: none;background-color: #007bff;-webkit-text-decoration-skip: objects;display: inline-block;font-weight: 400;text-align: center;white-space: nowrap;vertical-align: middle;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;border: 1px solid transparent;padding: .5rem 1rem;font-size: 1.25rem;line-height: 1.5;border-radius: .3rem;transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;border-color: #007bff;">点击我验证邮箱</a>
+            </p>
+            <div class="text-muted text-right" style="box-sizing: border-box;text-align: right!important;color: #6c757d!important;">
+                <p style="box-sizing: border-box;margin-top: 0;margin-bottom: 1rem;orphans: 3;widows: 3;">本网站由
+                    <a href="https://github.com/DXkite/suda" style="box-sizing: border-box;color: #007bff;text-decoration: underline;background-color: transparent;-webkit-text-decoration-skip: objects;">Suda {{SUDA_VERSION}}</a> 强力驱动</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

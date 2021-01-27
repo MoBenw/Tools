@@ -1,0 +1,41 @@
+{
+    "index": {
+        "class": "dxkite.user.response.IndexResponse",
+        "visit": "[\/{id:int}]",
+        "method": ["GET", "POST"]
+    },
+    "signup": {
+        "class": "dxkite.user.response.SignupResponse",
+        "visit": "\/signup",
+        "method": ["GET", "POST"]
+    },
+    "signin": {
+        "class": "dxkite.user.response.SigninResponse",
+        "visit": "\/signin",
+        "method": ["GET", "POST"]
+    },
+    "signout": {
+        "class": "dxkite.user.response.SignoutResponse",
+        "visit": "\/signout",
+        "method": ["GET"]
+    },
+    "verify": {
+        "class": "dxkite.user.response.VerifyResponse",
+        "visit": "\/verify",
+        "method": ["GET"]
+    },
+    "avatar": {
+        "class": "dxkite.user.response.AvatarResponse",
+        "visit": "\/avatar[\/{id:int}]",
+        "method": ["GET"]
+    },
+    "reset_password": {
+        "class": "dxkite.user.response.ResetResponse",
+        "visit": "\/reset_password"
+    },
+    "setting": {
+        "class": "dxkite.user.response.SettingResponse",
+        "visit": "\/setting",
+        "method": ["GET", "POST"]
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "prefix":"user_",
+    "tables": {
+        "invite": "dxkite.user.table.InviteTable",
+        "user": "dxkite.user.table.UserTable",
+        "emailCheck": "dxkite.user.table.EmailCheckTable"
+    }
+}

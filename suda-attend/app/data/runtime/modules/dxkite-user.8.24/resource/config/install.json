@@ -1,0 +1,9 @@
+{
+    "task": [{
+        "name": "初始化数据库",
+        "run": "dxkite.user.install.PrepareBaseUser"
+    }],
+    "page": [{
+        "class": "dxkite.user.install.UserResponse"
+    }]
+}

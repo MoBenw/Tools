@@ -1,0 +1,41 @@
+{
+    "name": "招新表",
+    "fields": {
+        "name": {
+            "name": "姓名",
+            "type": "text"
+        },
+        "age": {
+            "name": "年级-专业-班级信息",
+            "type": "text"
+        },
+        "sex": {
+            "name": "性别",
+            "type": "text"
+        },
+        "id_number": {
+            "name": "学号",
+            "type": "text"
+        },
+        "tel_number": {
+            "name": "手机号",
+            "type": "text"
+        },
+        "qq": {
+            "name": "QQ",
+            "type": "text"
+        },
+        "weixin": {
+            "name": "微信",
+            "type": "text"
+        },
+        "information": {
+            "name": "入会申请书",
+            "type": "text"
+        },
+        "description": {
+            "name": "自我介绍书",
+            "type": "text"
+        }
+    }
+}
