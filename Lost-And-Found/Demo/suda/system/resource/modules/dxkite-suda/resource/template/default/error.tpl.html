@@ -1,0 +1,36 @@
+@extend ('error_layout')
+
+@startInsert('error-head')
+<link rel="stylesheet" href="@static/google-code-prettify/prettify.css">
+@endInsert
+
+@startInsert('error-content')
+    @if ($?:message)
+    <section class="message">
+        {{ $:message }}
+    </section>
+    @endif
+
+    @if (DEBUG)
+    <div class="error-code">
+        <div class="error-position">{{ $:file }}#{{$:line(0) }}</div>
+        <pre class="prettyprint lang-php"><ol start="{{ key($:lines) }}">@foreach( $:lines as $num =>$line_code )<li class="line-{{$num}} @if ($num==$:pos_num) error-line @endif "><code>{{$line_code}}</code></li>@endforeach</ol></pre>
+    </div>
+        @if(count($:traces))
+        <ul class="trace-list">
+            @foreach ($:traces as $trace_info)
+            <li class="trace-item">{{! $trace_info }}</li>
+            @endforeach
+        </ul>
+        @endif
+    @endif
+@endInsert
+
+@startInsert('error-footer')
+<script src="@static/google-code-prettify/prettify.js"></script>
+<script>
+    window.addEventListener('load', function () {
+        prettyPrint();
+    });
+</script>
+@endInsert

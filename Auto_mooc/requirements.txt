@@ -1,0 +1,5 @@
+lxml==4.3.3
+PyExecJS==1.5.1
+requests==2.21.0
+tqdm==4.37.0
+uuid==1.30

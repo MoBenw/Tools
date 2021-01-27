@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<title>登入</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="@static/bootstrap/bootstrap.min2.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="@static/signin.css" rel="stylesheet">
+</head>
+
+<body class="text-center">
+	<form class="form-signin" action="" method="POST">
+		<h1 class="h3 mb-3 font-weight-normal">登入呀</h1>
+		<label for="inputtext" class="sr-only">Tel</label>
+		<input type="text" id="inputtext" class="form-control" placeholder="Tel" name="tel" required autofocus>
+		<label for="inputPassword" class="sr-only">Password</label>
+		<input type="password" id="inputPassword" class="form-control" placeholder="Password" name="passwd" required>
+		<div class="checkbox mb-3"></div>
+		<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+		<p class="mt-5 mb-3 text-muted"><a href="@u('index')">返回首页</a></p>
+	</form>
+</body>
+
+</html>

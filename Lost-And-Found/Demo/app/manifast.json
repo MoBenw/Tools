@@ -1,0 +1,12 @@
+{
+    "name": "suda-demo-app",
+    "version": "1.0-dev",
+    "modules": ["suda", "lostandfound"],
+    "reachable": ["lostandfound"],
+    "language": "zh-CN",
+    "url": {
+        "mode": 0,
+        "beautify": true,
+        "rewrite": true
+    }
+}

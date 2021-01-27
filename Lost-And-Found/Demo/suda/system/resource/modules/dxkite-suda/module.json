@@ -1,0 +1,29 @@
+{
+    "icon": "icon.png",
+    "name": "dxkite/suda",
+    "unique":"suda-${SUDA_VERSION}",
+    "version": "1.0.6",
+    "namespace": "dxkite\\suda",
+    "homepage": "http://atd3.cn",
+    "livemod": 1,
+    "authors": [{
+        "name": "dxkite",
+        "email": "dxktie@163.com"
+    }],
+    "discription": "Suda内置辅助模块",
+    "require": {},
+    "prefix": {
+        "admin": "-panel"
+    },
+    "response": {
+        "admin": "dxkite\\suda\\ACResponse"
+    },
+    "import": {
+        "share": {
+            "dxkite\\suda": "share"
+        },
+        "src": {
+            "dxkite\\suda\\response": "src"
+        }
+    }
+}

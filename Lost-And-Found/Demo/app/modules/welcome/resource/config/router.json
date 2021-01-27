@@ -1,0 +1,36 @@
+{
+    "index": {
+        "class": "suda.lostandfound.response.IndexResponse",
+        "url": "\/"
+    },
+    "setting": {
+        "class": "suda.lostandfound.response.SettingResponse",
+        "url": "\/setting"
+    },
+    "show": {
+        "class": "suda.lostandfound.response.ShowResponse",
+        "url": "\/show/{id:int}"
+    },
+    "signin": {
+        "class": "suda.lostandfound.response.SigninResponse",
+        "url": "\/signin"
+    },
+    "signup": {
+        "class": "suda.lostandfound.response.SignupResponse",
+        "url": "\/signup"
+    },
+    "user": {
+        "class": "suda.lostandfound.response.UserResponse",
+        "url": "\/user"
+    },
+    "write": {
+        "class": "suda.lostandfound.response.WriteResponse",
+        "url": "\/write"
+    },
+    "a": {
+        "template": "a",
+        "url": "\/a"
+    }
+    
+
+}

@@ -1,0 +1,23 @@
+{
+    "name": "suda/lostandfound",
+    "unique": "lostandfound",
+    "namespace": "suda\\lostandfound",
+    "install": "suda.lostandfound.manager.UserManager::install",
+    "authors": [
+        {
+            "name": "mobenw",
+            "email": "mobenw@qq.com"
+        }
+    ],
+    "import": {
+        "share": {
+            "suda\\lostandfound": "share"
+        },
+        "src": {
+            "suda\\lostandfound\\response": "src"
+        }
+    },
+    "discription": "简单的失物招领系统",
+    "require": {},
+    "version": "1.0.0"
+}

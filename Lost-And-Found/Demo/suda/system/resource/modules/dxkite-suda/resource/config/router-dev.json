@@ -1,0 +1,6 @@
+{
+    "debug_json_download" : {
+        "class": "dxkite\\suda\\response\\DownloadJsonResponse",
+        "url": "\/debug\/json\/{id:string}"
+     }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="@static/bootstrap/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="@static/bootstrap/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="@static/bootstrap/bootstrap.min.js"></script>
+    <title>后台</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <div class=" page-header dropdown col-md-12">
+                    <h1>失物招领系统 <small>v2.0</small></h1>
+                    <button type="button" class=" pull-right btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">
+                        用户中心 <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu1">
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="@u('signup')">注册</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="@u('signin')">登入</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="@u('user')">个人中心</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-md-3 column">
+                        <ul class="nav nav-stacked nav-pills">
+                            <li class="active"><a href="#">用户列表</a></li>
+                            <li><a href="@u('index')">返回主页</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-9 column">
+                        <div class="row clearfix">
+                            <div class="col-md-12 column">
+                                <h1>用户信息</h1>
+
+                                <table class="table table-hover table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>编号</th>
+                                            <th>Tel</th>
+                                            <th>密码</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @if($:fields)
+                                        @foreach ($:fields as $key => $value)
+                                        <tr>
+                                            @foreach ($value as $key2 => $value2)
+                                            @if ($key2 != "role")
+                                            <td>{{ $value2 }}</td>
+                                            @endif
+                                            @endforeach
+                                        </tr>
+                                        @endforeach
+                                        @endif
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
